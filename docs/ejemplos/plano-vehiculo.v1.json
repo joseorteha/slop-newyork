@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "id": "demo-carrito-01",
+  "name": "Carrito de ejemplo",
+  "rootPartId": "cabina-1",
+  "parts": [
+    {
+      "instanceId": "cabina-1",
+      "definitionId": "cabina-basica",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "instanceId": "rueda-fi",
+      "definitionId": "rueda-carretera",
+      "position": [
+        -0.8,
+        -0.35,
+        0.9
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "instanceId": "rueda-fd",
+      "definitionId": "rueda-carretera",
+      "position": [
+        0.8,
+        -0.35,
+        0.9
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "instanceId": "rueda-ti",
+      "definitionId": "rueda-carretera",
+      "position": [
+        -0.8,
+        -0.35,
+        -0.9
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "instanceId": "rueda-td",
+      "definitionId": "rueda-carretera",
+      "position": [
+        0.8,
+        -0.35,
+        -0.9
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "instanceId": "motor-1",
+      "definitionId": "motor-basico",
+      "position": [
+        0,
+        0,
+        -0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "instanceId": "bateria-1",
+      "definitionId": "bateria-basica",
+      "position": [
+        0,
+        0,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "a": {
+        "partId": "cabina-1",
+        "socketId": "rueda-fi"
+      },
+      "b": {
+        "partId": "rueda-fi",
+        "socketId": "eje"
+      }
+    },
+    {
+      "a": {
+        "partId": "cabina-1",
+        "socketId": "rueda-fd"
+      },
+      "b": {
+        "partId": "rueda-fd",
+        "socketId": "eje"
+      }
+    },
+    {
+      "a": {
+        "partId": "cabina-1",
+        "socketId": "rueda-ti"
+      },
+      "b": {
+        "partId": "rueda-ti",
+        "socketId": "eje"
+      }
+    },
+    {
+      "a": {
+        "partId": "cabina-1",
+        "socketId": "rueda-td"
+      },
+      "b": {
+        "partId": "rueda-td",
+        "socketId": "eje"
+      }
+    },
+    {
+      "a": {
+        "partId": "cabina-1",
+        "socketId": "motor"
+      },
+      "b": {
+        "partId": "motor-1",
+        "socketId": "base"
+      }
+    },
+    {
+      "a": {
+        "partId": "cabina-1",
+        "socketId": "bateria"
+      },
+      "b": {
+        "partId": "bateria-1",
+        "socketId": "base"
+      }
+    }
+  ]
+}
